@@ -37,7 +37,6 @@ namespace TMS_Project.admin
             }
             else
             {
-
                 ScriptManager.RegisterStartupScript(this, GetType(), "Popup", "Swal.fire({ title: \"Failure\",text: \"Password or username does not match!\",icon:\"error\"});", true);
             }
                 con.Close();
