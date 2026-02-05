@@ -105,14 +105,14 @@
                
                 <br />
 
-                <asp:TextBox ID="UsernameTextBox" placeholder="enter your Username" CssClass="form-control" runat="server"></asp:TextBox>
+                <asp:TextBox ID="UsernameTextBox" placeholder="enter your Email" CssClass="form-control" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ControlToValidate="UsernameTextBox" ForeColor="red" SetFocusOnError="true" Display="Dynamic" runat="server" ErrorMessage="Username is required"></asp:RequiredFieldValidator>
                 <br />
                  <asp:TextBox ID="PasswordTextBox" TextMode="Password" placeholder="enter your Password" CssClass="form-control" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ControlToValidate="PasswordTextBox" ForeColor="red" SetFocusOnError="true" Display="Dynamic" runat="server" ErrorMessage="password is required"></asp:RequiredFieldValidator>
                 <asp:RegularExpressionValidator ControlToValidate="PasswordTextBox" ForeColor="Red" Display="Dynamic" SetFocusOnError="true" ID="RegularExpressionValidator1" runat="server" ErrorMessage="please enter a strong password" ValidationExpression="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$"></asp:RegularExpressionValidator>
                 <br />
-                 <asp:TextBox ID="ConfirmTextBox" TextMode="Password" placeholder="enter your re-passward" CssClass="form-control" runat="server"></asp:TextBox>
+                 <asp:TextBox ID="ConfirmTextBox" TextMode="Password" placeholder="re-enter your passward" CssClass="form-control" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ControlToValidate="ConfirmTextBox" ForeColor="red" SetFocusOnError="true" Display="Dynamic" runat="server" ErrorMessage="re-enter password is required"></asp:RequiredFieldValidator>
                 <asp:CompareValidator ID="CompareValidator1" ControlToValidate="ConfirmTextBox" ControlToCompare="PasswordTextBox" ForeColor="Red" Display="Dynamic" SetFocusOnError="true" runat="server" ErrorMessage="Password must be identical"></asp:CompareValidator>
 
